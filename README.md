@@ -1,12 +1,6 @@
-# Code for the Xinjiang high-resolution WRF–3DVAR meteorological dataset
+# Code for the high-resolution near-surface meteorological forcing dataset 
 ﻿
-This repository contains the main scripts used to generate and evaluate the high-resolution meteorological data products over Xinjiang based on the WRF/WRFDA 3DVAR system and ANUSPLIN, as well as MATLAB codes used for validation and figure production in the associated manuscript.
-﻿
-> **Important:**  
-> - The codes are provided for non-commercial research use and are intended as an implementation reference for the workflow described in the paper.
-﻿
----
-﻿
+
 ## 1. Contents
 ﻿
 The repository (code archive) includes three main groups of scripts:
@@ -67,21 +61,12 @@ To run the WRF–3DVAR example case or adapt the workflow, you will need:
 - **ANUSPLIN** (licensed interpolation package).  
 This software is **not** distributed in this repository and must be obtained from the official provider.
 ﻿
-### 2.2. Data
-﻿
-The workflow relies on:
-﻿
-- Large-scale reanalysis data (e.g. ERA5) for model forcing.
-- Surface station observations over Xinjiang for 3DVAR assimilation and validation.
-﻿
-> The records from the **30 withheld validation stations** are operational observations from the Chinese meteorological network and are subject to confidentiality and data-sharing restrictions.  
-> They are **not redistributed** here; users should obtain comparable station data from the relevant data provider if they wish to reproduce the full workflow.
-﻿
-### 2.3. Software environment
+### 2.2. Software environment
 ﻿
 - MATLAB (for running the validation and plotting scripts)
 - Standard UNIX shell environment (for `scheme1.sh`)
 - Optional: NCO/CDO or similar tools for manipulating NetCDF files
+- 
 ## 3. How to use the scripts
 ﻿
 ### 3.1. WRF–3DVAR example case
